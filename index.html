@@ -5,8 +5,126 @@
     <title>HTML Academy: Пинк</title>
   </head>
   <body>
-
-    <p>Репозиторий создан для обучения на интенсивном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/adaptive">Продвинутый HTML и CSS</a>».</p>
-
+    <header class="page-header">
+      <h1 class="page-header__title">Пинк</h1> <!-- скрыт! -->
+      <div class="page-header__logo">
+        <img src="http://placehold.it/150x100" width="170" height="50" alt="Пинк">
+      </div>
+      <nav class="main-nav">
+        <button class="main-nav__toogler"></button>
+        <div class="main-nav__wrapper">
+          <ul class="main-nav__list">
+            <li class="main-nav__item main-nav__item--active"><a>Главная</a></li>
+            <li class="main-nav__item"><a href="photo.html">Фотографии</a></li>
+            <li class="main-nav__item"><a href="form.html">Конкурс</a></li>
+            <li class="main-nav__item"><a href="#">HTML Academy</a></li>
+          </ul>
+        </div>
+      </nav>
+      <div class="intro">
+        <img src="http://placehold.it/150x100">
+      </div>
+      <div class="app">
+        <a href="#" class="app__btn btn">Скачать приложение</a>
+        <div class="app__list">
+          <a href="#"><img src="http://placehold.it/150x100" alt="Apple"></a>
+          <a href="#"><img src="http://placehold.it/150x100" alt="Android"></a>
+          <a href="#"><img src="http://placehold.it/150x100" alt="Microsoft"></a>
+        </div>
+        <span class="app__descr">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</span>
+      </div>
+    </header>
+    <main class="main">
+      <div class="info">
+        <b class="info__question">Устали от серости мегаполиса?</b>
+        <b class="info__question">Нам есть, что вам предложить!</b>
+        <h3 class="info__title">Поднимает настроение</h3>
+        <p class="info__descr">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
+        <h3 class="info__title">Меняет мир вокруг</h3>
+        <p class="info__descr">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
+        <h3 class="info__title">Заводит новых друзей</h3>
+        <p class="info__descr">Ставьте лайки, комментируте, делитесь фотографиями с друзьями и заводите новых</p>
+      </div>
+      <div class="review">
+        <div class="review__wrapper slider">
+          <div class="review__list">
+            <blockquote class="review__item slider__item">
+              <cite class="review__author-name">Николай Петров</cite>
+              <p>«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
+            </blockquote>
+          </div>
+          <div class="slider__controls">
+            <input type="radio" id="review-1" name="review-toggle" checked>
+            <label for="review-1"></label>
+            <input type="radio" id="review-2" name="review-toggle">
+            <label for="review-2"></label>
+            <input type="radio" id="review-3" name="review-toggle">
+            <label for="review-3"></label>
+          </div>
+        </div>
+      </div>
+      <div class="price">
+        <div class="price__wrapper slider">
+          <div class="price__list">
+            <div class="price__item">
+              <header class="price__header">
+                <h4 class="price__title">База</h4>
+                <p class="price__cost">1,99 USD</p>
+              </header>
+              <div class="price__content">
+                <ul class="price__content-list">
+                  <li class="price__content-item">Розовый фильтр <span class="checked checked--yes"></span></li>
+                  <li class="price__content-item">Смайлики <span class="checked checked--no"></span></li>
+                  <li class="price__content-item">Комментарии <span class="checked checked--no"></span></li>
+                </ul>
+              </div>
+            </div>
+            <div class="price__item">
+              <header class="price__header">
+                <h4 class="price__title">Стандарт</h4>
+                <p class="price__cost">3,99 USD</p>
+              </header>
+              <div class="price__content">
+                <ul class="price__content-list">
+                  <li class="price__content-item">Розовый фильтр <span class="checked checked--yes"></span></li>
+                  <li class="price__content-item">Смайлики <span class="checked checked--yes"></span></li>
+                  <li class="price__content-item">Комментарии <span class="checked checked--no"></span></li>
+                </ul>
+              </div>
+            </div>
+            <div class="price__item">
+              <header class="price__header">
+                <h4 class="price__title">Анлим</h4>
+                <p class="price__cost">9,99 USD</p>
+              </header>
+              <div class="price__content">
+                <ul class="price__content-list">
+                  <li class="price__content-item">Розовый фильтр <span class="checked checked--yes"></span></li>
+                  <li class="price__content-item">Смайлики <span class="checked checked--yes"></span></li>
+                  <li class="price__content-item">Комментарии <span class="checked checked--yes"></span></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="slider__controls">
+            <input type="radio" id="price-1" name="price-toggle">
+            <label for="price-1"></label>
+            <input type="radio" id="price-2" name="price-toggle" checked>
+            <label for="price-2"></label>
+            <input type="radio" id="price-3" name="price-toggle">
+            <label for="price-3"></label>
+          </div>
+        </div>
+      </div>
+      <div class="contacts">
+        <h4 class="contacts__question">Остались вопросы? Свяжитесь с нами!</h4>
+        <b class="contacts__title">Звоните:</b>
+        <p class="contacts__descr">+7 (812) 555-66-66</p>
+        <b class="contacts__title">Пишите:</b>
+        <p class="contacts__descr">mail@htmlacademy.ru</p>
+        <b class="contacts__title">Приезжайте в гости:</b>
+        <p class="contacts__descr">ул. Большая Конюшенная, 19/8</p>
+      </div>
+    </main>
   </body>
 </html>
